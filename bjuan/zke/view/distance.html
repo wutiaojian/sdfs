@@ -1,0 +1,24 @@
+<div class="main">
+    <dl ng-repeat='item in list'>
+        <dt>
+            <a ui-sref='info({id:item.id})'><img ng-src="{{item.img}}" alt=""></a>
+        </dt>
+        <dd>
+            <h3>{{item.name}}</h3>
+            <div class='start'>
+                <i class='fa fa-star on'></i>
+                </i><i class='fa fa-star'></i>
+                </i><i class='fa fa-star'></i>
+                </i><i class='fa fa-star'></i>
+                </i><i class='fa fa-star'></i>
+            </div>
+            <div class='price'>
+                <p>月售 12份 <span><b class='send'>{{item.low}}元</b>起送</span></p>
+            </div>
+            <div class='distant'>
+                <p>43分钟 {{item.distance }}千米 <span>配送<b class='get'>{{item.send}}</b>元</span></p>
+            </div>
+        </dd>
+    </dl>
+</div>
+<ui-view></ui-view>

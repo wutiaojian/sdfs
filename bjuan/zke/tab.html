@@ -1,0 +1,28 @@
+<div class="wraps"> 
+
+    		   <nav class="main-nav">
+            		<a ng-repeat='item in myData' ng-class="{high:$first}">{{item.title}}</a>
+            	</nav>
+            		
+            		
+            <div class='content-box'>
+            	<div ng-repeat='item in myData' ng-style="{display:$first?'block':'none'}" ><!--{{item.content}}-->
+            		
+            		<dl ng-repeat='items in item.content'>
+            			<dd>
+            				<p>
+            					<b>{{items.name}}</b>
+            					<span>{{items.price}}</span>
+            				</p>
+            			</dd>
+            			<dt>
+            				<label for="">
+        			   	      			<input type="checkbox" class="checkbox" />   <span></span>  
+        			   	      			
+        			   	     </label>
+            			</dt>
+            		</dl>
+            	</div>
+            </div>
+		
+</div>

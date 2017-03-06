@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myapp'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="tool/Font-Awesome-master/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .bg {
+            color: blue
+        }
+    </style>
+</head>
+
+<body ng-controller='apps'>
+    <div id="ball-wrap">
+        <!--header{-->
+        <header class="ball-header-bar">
+            <div class="icon-group left-icon-group">
+                <a href="#" class="icon">
+                	<i class="fa fa-angle-left" style='font-size:18px'></i>
+                    <span>返 回</span>
+                </a>
+            </div>
+            <h2 class="ball-header-title">	食堂-点菜	</h2>
+             <div class="icon-group right-icon-group">
+                <a href="#" class="icon">
+                	<i class="fa fa-ellipsis-h" style='font-size:18px'></i>
+                    
+                </a>
+            </div>
+        </header>
+        <!--}header-->
+        <!--主体部分{-->
+        <div class="ball-view">
+                 <my-tab my-data='list' my-id='div1' my-fn='say("cd")'>
+        
+                </my-tab>
+ 
+      
+            
+        </div>
+        <!--}主体部分-->
+    </div>
+    <script src="js/angular.min.js"></script>
+    <script src='js/angular-ui-router.min.js'></script>
+    <script src='js/jquery-1.11.1.js'></script>
+    <script src='js/index.js'></script>
+</body>
+
+</html>

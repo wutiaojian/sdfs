@@ -1,0 +1,47 @@
+.ball-header-bar {
+    width: 100%;
+    height: 0.4rem;
+    background: #ffa500;
+    position: relative;
+    .icon-group {
+        display: -webkit-box;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        height: 0.4rem;
+        padding: 0 0.1rem;
+        .icon {
+            display: -webkit-box;
+            -webkit-box-align: center;
+            -webkit-box-pack: center;
+            height: 0.4rem;
+            width: 0.44rem;
+            color: #fff;
+            span{
+                margin-left:0.02rem;
+            }
+            i {
+                font-size: 0.13rem;
+            }
+        }
+        &.left-icon-group {
+            float: left;
+        }
+        &.right-icon-group {
+            float: right;
+        }
+    }
+    .ball-header-title {
+        position: absolute;
+        left: 0.45rem;
+        right: 0.45rem;
+        text-align: center;
+        line-height: 0.4rem;
+        color: #fff;
+        .title-cut {
+            display: -webkit-box;
+            -webkit-box-align: center;
+            -webkit-box-pack: center;
+            height: 0.4rem;
+        }
+    }
+}

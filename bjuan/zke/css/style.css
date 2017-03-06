@@ -1,0 +1,229 @@
+body, html {
+  width: 100%;
+  height: 100%; }
+
+html {
+  font-size: 100px; }
+
+#ball-wrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+
+.ball-header-bar {
+  width: 100%;
+  height: 0.4rem;
+  background: #ffa500;
+  position: relative; }
+  .ball-header-bar .icon-group {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    height: 0.4rem;
+    padding: 0 0.1rem; }
+    .ball-header-bar .icon-group .icon {
+      display: -webkit-box;
+      -webkit-box-align: center;
+      -webkit-box-pack: center;
+      height: 0.4rem;
+      width: 0.44rem;
+      color: #fff; }
+      .ball-header-bar .icon-group .icon span {
+        margin-left: 0.02rem; }
+      .ball-header-bar .icon-group .icon i {
+        font-size: 0.13rem; }
+    .ball-header-bar .icon-group.left-icon-group {
+      float: left; }
+    .ball-header-bar .icon-group.right-icon-group {
+      float: right; }
+  .ball-header-bar .ball-header-title {
+    position: absolute;
+    left: 0.45rem;
+    right: 0.45rem;
+    text-align: center;
+    line-height: 0.4rem;
+    color: #fff; }
+    .ball-header-bar .ball-header-title .title-cut {
+      display: -webkit-box;
+      -webkit-box-align: center;
+      -webkit-box-pack: center;
+      height: 0.4rem; }
+
+.ball-footer-bar {
+  width: 100%;
+  border-top: solid 1px #ccc;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #fff; }
+  .ball-footer-bar .footer-nav {
+    width: 100%;
+    height: 0.42rem;
+    display: -webkit-box;
+    -webkit-box-align: center; }
+    .ball-footer-bar .footer-nav a {
+      -webkit-box-flex: 1;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-box-align: center;
+      -webkit-box-pack: center;
+      height: 0.42rem;
+      color: #212121; }
+      .ball-footer-bar .footer-nav a i.fa-camera {
+        font-size: 0.3rem;
+        padding: 0.1rem; }
+      .ball-footer-bar .footer-nav a span {
+        display: block; }
+        .ball-footer-bar .footer-nav a span.camera-icon {
+          border-radius: 50%;
+          border: solid 1px #ccc;
+          margin-top: -0.1rem;
+          background: #fff; }
+
+.ball-view {
+  width: 100%;
+  display: -webkit-box; }
+  .ball-view .wraps {
+    width: 100%;
+    display: -webkit-box; }
+    .ball-view .wraps .content-box {
+      -webkit-box-flex: 1; }
+      .ball-view .wraps .content-box dl {
+        width: 90%;
+        float: right;
+        padding: 0.12rem;
+        box-sizing: border-box;
+        height: 0.64rem;
+        border-bottom: solid 1px #ccc;
+        display: -webkit-box; }
+        .ball-view .wraps .content-box dl dt {
+          width: 0.6rem; }
+          .ball-view .wraps .content-box dl dt label {
+            width: 0.34rem;
+            height: 0.34rem;
+            position: relative;
+            display: block; }
+            .ball-view .wraps .content-box dl dt label input {
+              position: absolute;
+              z-index: 2;
+              left: 0;
+              top: 0;
+              opacity: 0; }
+              .ball-view .wraps .content-box dl dt label input:checked + span {
+                background: url(../img/true.jpg);
+                background-size: cover; }
+            .ball-view .wraps .content-box dl dt label span {
+              width: 0.34rem;
+              height: 0.34rem;
+              display: block;
+              background: url(../img/false.jpg);
+              background-size: cover; }
+        .ball-view .wraps .content-box dl dd {
+          -webkit-box-flex: 1; }
+          .ball-view .wraps .content-box dl dd p span {
+            display: block; }
+  .ball-view .item-info {
+    box-sizing: border-box; }
+    .ball-view .item-info dl {
+      width: 100%;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-box-pack: center; }
+      .ball-view .item-info dl dd {
+        margin: auto; }
+      .ball-view .item-info dl dt {
+        width: 0.9rem;
+        height: 0.7rem; }
+        .ball-view .item-info dl dt img {
+          display: block;
+          width: 100%;
+          height: 100%; }
+  .ball-view .main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    background: #fff;
+    padding: 0.15rem;
+    box-sizing: border-box; }
+    .ball-view .main dl {
+      width: 100%;
+      display: -webkit-box;
+      -webkit-box-align: center;
+      padding-bottom: 0.2rem; }
+      .ball-view .main dl dt {
+        width: 0.9rem;
+        height: 0.7rem; }
+        .ball-view .main dl dt img {
+          display: block;
+          width: 100%;
+          height: 100%; }
+      .ball-view .main dl dd {
+        -webkit-box-flex: 1;
+        margin-left: 0.15rem; }
+        .ball-view .main dl dd .start .on {
+          color: #ffb432; }
+        .ball-view .main dl dd div p span {
+          float: right; }
+          .ball-view .main dl dd div p span .send {
+            color: red; }
+          .ball-view .main dl dd div p span .get {
+            color: blue; }
+  .ball-view .main-nav {
+    width: 0.62rem;
+    height: 1.47rem;
+    margin-bottom: 0.05rem;
+    border-bottom: solid 1px #ccc; }
+    .ball-view .main-nav a {
+      display: block;
+      background: #f4f4f4;
+      width: 0.62rem;
+      height: 0.37rem;
+      text-align: center;
+      line-height: 0.45rem;
+      color: #000;
+      box-sizing: border-box;
+      border-bottom: solid 0.5px #ccc; }
+      .ball-view .main-nav a.high {
+        background: #fff; }
+      .ball-view .main-nav a:nth-child(1) {
+        position: relative;
+        /*&:after {
+            content: "";
+            width: 0;
+            heihgt: 0;
+            border-bottom: 5px solid #ccc;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            position: absolute;
+            right: 0.29rem;
+            top: 0.18rem;
+        }
+        &:before {
+            content: "";
+            width: 0;
+            heihgt: 0;
+            border-top: 5px solid #454b93;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            position: absolute;
+            right: 0.29rem;
+            top: 0.25rem;
+        }*/ }
+        .ball-view .main-nav a:nth-child(1) i {
+          font-size: 0.08rem;
+          color: #ccc; }
+          .ball-view .main-nav a:nth-child(1) i.bg {
+            color: blue; }
+          .ball-view .main-nav a:nth-child(1) i.fa-sort-up {
+            position: absolute;
+            right: 0.29rem;
+            top: 0.18rem; }
+          .ball-view .main-nav a:nth-child(1) i.fa-sort-desc {
+            position: absolute;
+            right: 0.29rem;
+            top: 0.2rem; }
+
+/*# sourceMappingURL=style.css.map */
